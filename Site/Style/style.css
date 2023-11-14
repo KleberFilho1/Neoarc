@@ -26,6 +26,10 @@
     --titulo1_borda: 24px 0px 12px 0px;
 }
 
+main{
+    background-color: #F5F5F5;
+}
+
 h1{
     font-family: var(--font-titulo);
     font-weight: bold;
@@ -78,6 +82,7 @@ h1{
 }
 
 .button{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +97,12 @@ h1{
     background-color: var(--color01);
     border: none;
     margin: 52px 0;
+    box-shadow: 2px 3px 2px #072ac81a;
+    transition: 0.5s;
+}
+
+.button:hover{
+    transform: translateY(-10px);
 }
 
 h4{
@@ -103,4 +114,18 @@ h4{
 
 #saiba_mais{
     margin: 120px 90vh;
+}
+
+.sobre-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 620px; 
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25vw;
 }
