@@ -30,7 +30,7 @@ h1{
     font-family: var(--font-titulo);
     font-weight: bold;
     padding: var(--titulo1_borda);
-    font-size: 52px;
+    font-size: 48px;
     font
 }
 
@@ -53,7 +53,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 25%;
+    gap: 41vh;
     align-self: center;
     background-color: var(--color01);
     height: 50px;
@@ -83,10 +83,10 @@ h1{
     align-items: center;
     font-family: var(--font-titulo);
     font-weight: 600;
-    font-size: 28px;
-    border-radius: 28px;
-    width: 300px;
-    height: 60px;
+    font-size: 26px;
+    border-radius: 22px;
+    width: 350px;
+    height: 62px;
     padding: 12px;
     color: var(--color02);
     background-color: var(--color01);
@@ -98,5 +98,9 @@ h4{
     font-family: var(--font-titulo);
     color: var(--color01);
     font-weight:600;
-    font-size: 22px;
+    font-size: 18px;
+}
+
+#saiba_mais{
+    margin: 120px 90vh;
 }
