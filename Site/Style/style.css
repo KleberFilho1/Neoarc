@@ -30,7 +30,8 @@ h1{
     font-family: var(--font-titulo);
     font-weight: bold;
     padding: var(--titulo1_borda);
-    font-size: 64px;
+    font-size: 52px;
+    font
 }
 
 #menu_navega{
@@ -43,20 +44,59 @@ h1{
     font-size: 18px;
 }
 
-#nav_bar{
-    display: flex;
+#logo_cabeca{
+    width: 40px;
+    height: 40px; 
 }
 
 #cabeca {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 25%;
+    align-self: center;
     background-color: var(--color01);
-    height: 100px;
-    padding: 8px 120px 8px 120px;
+    height: 50px;
+    padding: 5px 120px 5px 120px;
 }
 
-#logo_cabeca{
-    width:65px;
-    height: 65px;
+#principal{
+    margin: 120px 230px;
+    display: flex;
+    justify-content: center;
+}
+
+#palavras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#imagem{
+    width: 410px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 28px;
+    border-radius: 28px;
+    width: 300px;
+    height: 60px;
+    padding: 12px;
+    color: var(--color02);
+    background-color: var(--color01);
+    border: none;
+    margin: 52px 0;
+}
+
+h4{
+    font-family: var(--font-titulo);
+    color: var(--color01);
+    font-weight:600;
+    font-size: 22px;
 }
