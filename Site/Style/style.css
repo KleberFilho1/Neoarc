@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
@@ -18,12 +20,9 @@
     --color08: #2D138A;
     --color09: #0CF2F2;
     --color10: #0CF2F2;
-
     --font-titulo: 'Poppins', sans-serif;
     --font-paragrafo: 'Roboto', sans-serif;
     --font-style: 'Expletus Sans', sans-serif;
-
-    --titulo1_borda: 24px 0px 12px 0px;
 }
 
 main{
@@ -34,7 +33,7 @@ h1{
     font-family: var(--font-titulo);
     font-weight: bold;
     padding: var(--titulo1_borda);
-    font-size: 48px;
+    font-size: 3rem;
     font
 }
 
@@ -45,40 +44,47 @@ h1{
     list-style: none;
     font-family: var(--font-titulo);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 #logo_cabeca{
-    width: 40px;
-    height: 40px; 
+    width: 2.5rem;
+    height: 2.5rem; 
 }
 
 #cabeca {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 41vh;
+    gap: 48.5vh;
     align-self: center;
     background-color: var(--color01);
-    height: 50px;
-    padding: 5px 120px 5px 120px;
+    height: 2.9rem;
+    padding: 0.3125rem 7.5rem 0.3125rem 7.5rem;
+    box-shadow: 0px 10px 50px #09070d2f;
 }
 
 #principal{
-    margin: 120px 230px;
+    margin: 7.9rem 14.375rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 #palavras{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 #imagem{
-    width: 410px;
+    background-image: url('/Arquivos/Imagens/Imagem\ de\ jogo.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 26rem;
+    height: 26rem;
 }
 
 .button{
@@ -88,44 +94,142 @@ h1{
     align-items: center;
     font-family: var(--font-titulo);
     font-weight: 600;
-    font-size: 26px;
-    border-radius: 22px;
-    width: 350px;
-    height: 62px;
-    padding: 12px;
+    font-size: 1.625rem;
+    border-radius: 1.375rem;
+    width: 21.875rem;
+    height: 3.875rem;
+    padding: 0.75rem;
     color: var(--color02);
     background-color: var(--color01);
     border: none;
-    margin: 52px 0;
+    margin: 3.25rem 0;
     box-shadow: 2px 3px 2px #072ac81a;
     transition: 0.5s;
 }
 
 .button:hover{
     transform: translateY(-10px);
+    background-color: var(--color06);
 }
 
 h4{
     font-family: var(--font-titulo);
-    color: var(--color01);
     font-weight:600;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 #saiba_mais{
-    margin: 120px 90vh;
+    margin: 7.5rem 90vh;
 }
 
 .sobre-section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 620px; 
+    background-color: var(--color02);
+    color: var(--color01);
+    height: 30rem;
+    box-shadow: 18px 18px 50px  #09070d52;
+}
+
+.sobre-section-direita{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color02);
+    gap: 5rem;
+    color: var(--color01);
+    height: 30rem;
+    box-shadow: 18px 18px 50px  #09070d52;
+}
+
+.sobre-section-black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    background-color: var(--color01);
+    color: var(--color02);
+    height: 30rem;
+    box-shadow: inset 0px 0px 50px -20px #f2f4f336;
+    
 }
 
 .texto{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: var(--color01);
+    text-align: center;
     margin: 0 25vw;
+}
+
+.texto-esquerda{
+    color: var(--color02);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    width: 30rem;
+}
+
+.texto-direita{
+    color: var(--color01);
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: right;
+    width: 30rem;
+}
+
+#ilutra02{
+    background-image: url('/Arquivos/Imagens/ilustra02.png');
+    background-position: center;
+    background-size: auto;
+}
+
+#ilutra01{
+    background-image: url('/Arquivos/Imagens/Ilustra01.png');
+    background-position: center;
+    background-size: auto;
+}
+
+.imagem-ilustra{
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1.10rem;
+}
+
+#roda-pe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline;
+    background-color: var(--color01);
+    color: var(--color02);
+    gap: 8rem;
+    height: 29rem;
+    box-shadow: 0px -8px 50px  #09070d31;
+}
+
+.contatos{
+    margin-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contatos_direita{
+    align-items: flex-end;
+}
+
+#contatos_esquerda{
+    align-items: flex-start;
+}
+
+.contatos h1{
+    font-size: 2rem;
 }
