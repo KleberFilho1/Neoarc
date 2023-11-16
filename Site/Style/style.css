@@ -13,7 +13,7 @@
 :root {
     --color01: #09070D;
     --color02: #F2F4F3;
-    --color03: #231F20;
+    --color03: #1F2023;
     --color04: #7E8287;
     --color05: #5F00BA;
     --color06: #072AC8;
@@ -250,7 +250,7 @@ h4{
     font-size: 2rem;
 }
 
-@media screen and (min-width: 750px) and (max-width: 1000px){
+@media screen and (orientation: landscape) and (max-width: 1000px) {
     * {
         transition: 1s;
     }
@@ -351,30 +351,49 @@ h4{
     }
 }
 
-
-@media screen and (min-width: 450px) and (max-width: 750px){
+@media screen and (orientation: portrait) and (max-width: 750px){
     #cabeca{
         justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }   
+
+    #logo_cabeca{
+        margin-left: 1.3rem;
     }
 
+    
     #menu_navega{
-        display: flex;
         position: relative;
-        transform: translateY(80px);
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
-        height: 22rem;
-        width: 14rem;
-        padding: 2.5rem 2rem 0 2rem;
-        border-radius: 0.7rem;
-        gap: 0.8rem;
+        align-items: flex-start;
+        transform: translate3d(-15vw, 20vh, 0);
+        gap: 2rem;
+        width: 100vw;
+        height: 150vh;
         color: var(--color02);
-        background-color: var(--color01);
+        background-color: var(--color03);
         list-style: none;
         font-family: var(--font-titulo);
         font-weight: 600;
         font-size: 1.8rem;
+    }
+
+   
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+
+    #menu_navega li{
+        position: relative;
+        margin: 0px 0.5px 0px 3rem;
     }
 
 }
