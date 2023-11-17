@@ -26,12 +26,27 @@
     --font-style: 'Expletus Sans', sans-serif;
 }
 
+#creditos{
+    color: var(--color04);
+    background-color: var(--color01);
+    font-family: var(--font-paragrafo);
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    padding-left: 3rem;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #F5F5F5;
     width: 100%;
+    overflow-x: hidden;
 }
 
 h1{
@@ -380,6 +395,10 @@ h4{
 }
 
 @media screen and (max-width: 750px){
+
+    main{
+        overflow-x: hidden;
+    }
 
     body {
         overflow-x: hidden;
