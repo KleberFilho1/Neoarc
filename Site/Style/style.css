@@ -405,7 +405,7 @@ h4{
       }
       .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 5vh;
         right: 0;
         width: 100vw;
         height: 98vh;
@@ -492,7 +492,7 @@ h4{
     }
 
     #menu_navega li{
-        font-size: 0.85rem;
+        font-size: 1.75rem;
     }
 
     .texto h1{
@@ -593,6 +593,8 @@ h4{
         gap: 1.5rem;
     }
 
-    
+    .button:hover, .button.touch-hover{
+        background-color: var(--color06);
+    }
 
 }
