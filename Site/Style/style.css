@@ -394,10 +394,15 @@ h4{
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 780px){
 
     main{
         overflow-x: hidden;
+    }
+
+    #cabeca{
+        position: relative;
+        
     }
 
     body {
@@ -405,7 +410,7 @@ h4{
       }
       .nav-list {
         position: absolute;
-        top: 5vh;
+        top: 3rem;
         right: 0;
         width: 100vw;
         height: 98vh;
