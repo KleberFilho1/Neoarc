@@ -82,7 +82,7 @@ h1{
 }
 
 #imagem{
-    background-image: url('/Arquivos/Imagens/Imagem\ de\ jogo.jpg');
+    background-image: url('../../Arquivos/Imagens/Imagem-de-jogo.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 26rem;
@@ -193,13 +193,13 @@ h4{
 }
 
 #ilutra02{
-    background-image: url('/Arquivos/Imagens/ilustra02.png');
+    background-image: url('../../Arquivos/Imagens/ilustra02.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #ilutra01{
-    background-image: url('/Arquivos/Imagens/Ilustra01.png');
+    background-image: url('../../Arquivos/Imagens/Ilustra01.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
